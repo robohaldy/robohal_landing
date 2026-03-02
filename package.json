@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "deploy": "opennextjs-cloudflare",
+    "deploy": "opennextjs-cloudflare build",
     "preview": "opennextjs-cloudflare preview"
   },
   "dependencies": {
