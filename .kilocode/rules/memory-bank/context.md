@@ -1,10 +1,10 @@
-# Active Context: Next.js Starter Template
+# Active Context: RoboHal Automation Workflows
 
 ## Current State
 
-**Template Status**: ✅ Ready for development
+**Project Status**: ✅ Workflows app live — 2 active workflow pages + home
 
-The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It's ready for AI-assisted expansion to build any type of application.
+The site is now a full automation workflows platform for robohal.com, featuring a dark-themed, glassmorphism UI with two live workflow pages and a "more coming soon" placeholder.
 
 ## Recently Completed
 
@@ -14,74 +14,50 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
+- [x] **RoboHal Automation Workflows app** — full redesign
+  - Dark theme (`#0a0a0f`) with cyan/violet gradient branding
+  - Grid background, glassmorphism cards, glow effects
+  - Home page with hero, stats bar, workflow cards, N8n section, footer
+  - `/workflows/real-estate` — Real Estate Lead Engine detail page
+  - `/workflows/robot-intel` — Humanoid Robot Intelligence detail page
 
 ## Current Structure
 
 | File/Directory | Purpose | Status |
 |----------------|---------|--------|
-| `src/app/page.tsx` | Home page | ✅ Ready |
-| `src/app/layout.tsx` | Root layout | ✅ Ready |
-| `src/app/globals.css` | Global styles | ✅ Ready |
+| `src/app/page.tsx` | Home page — workflow cards hub | ✅ Live |
+| `src/app/layout.tsx` | Root layout + RoboHal metadata | ✅ Live |
+| `src/app/globals.css` | Tailwind + custom brand utilities | ✅ Live |
+| `src/app/workflows/real-estate/page.tsx` | Real Estate Lead Engine detail | ✅ Live |
+| `src/app/workflows/robot-intel/page.tsx` | Humanoid Robot Intelligence detail | ✅ Live |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
 
-## Current Focus
+## Workflow Details
 
-The template is ready. Next steps depend on user requirements:
+### Real Estate Lead Engine (`/workflows/real-estate`)
+- 5-stage algorithm: Listing Ingestion → Rental Yield → DOM Scoring → Exit Strategy → Opportunity Score
+- 4 exit strategies: Buy & Hold, Fix & Flip, BRRRR, Seller Financing
+- DOM algorithm: 0-30 days (standard), 31-60 (motivated), 60+ (seller financing ready)
+- Output: CRM push, Slack, email digest, webhook
 
-1. What type of application to build
-2. What features are needed
-3. Design/branding preferences
+### Humanoid Robot Intelligence (`/workflows/robot-intel`)
+- 5-stage pipeline: Scraping → Classification → Entity Extraction → Scoring → Knowledge Base
+- 4 data source categories: Tech publications, Research/Academia, Company Intel, Social
+- 4 opportunity types: R&D acquisition, Material sourcing, Partnerships, Market intel
+- 8 tracked companies: Boston Dynamics, Figure AI, Agility, Tesla, 1X, Apptronik, Sanctuary, Unitree
 
-## Quick Start Guide
+## Design System
 
-### To add a new page:
-
-Create a file at `src/app/[route]/page.tsx`:
-```tsx
-export default function NewPage() {
-  return <div>New page content</div>;
-}
-```
-
-### To add components:
-
-Create `src/components/` directory and add components:
-```tsx
-// src/components/ui/Button.tsx
-export function Button({ children }: { children: React.ReactNode }) {
-  return <button className="px-4 py-2 bg-blue-600 text-white rounded">{children}</button>;
-}
-```
-
-### To add a database:
-
-Follow `.kilocode/recipes/add-database.md`
-
-### To add API routes:
-
-Create `src/app/api/[route]/route.ts`:
-```tsx
-import { NextResponse } from "next/server";
-
-export async function GET() {
-  return NextResponse.json({ message: "Hello" });
-}
-```
-
-## Available Recipes
-
-| Recipe | File | Use Case |
-|--------|------|----------|
-| Add Database | `.kilocode/recipes/add-database.md` | Data persistence with Drizzle + SQLite |
-
-## Pending Improvements
-
-- [ ] Add more recipes (auth, email, etc.)
-- [ ] Add example components
-- [ ] Add testing setup recipe
+- Background: `#0a0a0f`
+- Brand color: `#00e5ff` (cyan)
+- Accent: `#7c3aed` (violet)
+- Cards: glassmorphism (`card-glass` utility)
+- Grid background: `grid-bg` utility
+- Gradient text: `gradient-text` utility
 
 ## Session History
 
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-03-02 | Full RoboHal automation workflows app built — home + 2 workflow detail pages |

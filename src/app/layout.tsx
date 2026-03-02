@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "RoboHal — Automation Workflows",
+  description:
+    "Intelligent automation workflows for real estate lead generation, humanoid robot intelligence, and more — powered by N8n.",
 };
 
 export default function RootLayout({
