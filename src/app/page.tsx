@@ -111,25 +111,25 @@ export default function Home() {
         <div className="absolute top-20 left-1/4 w-[400px] h-[400px] bg-violet-600/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-4xl mx-auto text-center relative">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-8">
+          <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
             Powered by N8n Automation
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 className="animate-fade-up-delay-1 text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
             Intelligent{" "}
             <span className="gradient-text">Automation</span>
             <br />
             Workflows
           </h1>
 
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="animate-fade-up-delay-2 text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             Purpose-built automation tools that surface high-value opportunities
             for your business — from real estate deals to robotics intelligence.
             Always on. Always working.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="#workflows"
               className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-black font-semibold hover:from-cyan-400 hover:to-cyan-300 transition-all glow-brand"
@@ -147,7 +147,7 @@ export default function Home() {
       </section>
 
       {/* Stats bar */}
-      <section className="border-y border-white/5 bg-white/[0.02] py-8 px-6">
+      <section className="animate-fade-up-delay-4 border-y border-white/5 bg-white/[0.02] py-8 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
@@ -162,10 +162,10 @@ export default function Home() {
       <section id="workflows" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="animate-fade-up text-3xl sm:text-4xl font-bold text-white mb-4">
               Available Workflows
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="animate-fade-up-delay-1 text-slate-400 max-w-xl mx-auto">
               Each workflow is a fully automated pipeline built in N8n — running
               continuously to deliver leads, signals, and intelligence directly
               to your team.
@@ -173,11 +173,11 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {workflows.map((wf) => (
+            {workflows.map((wf, i) => (
               <Link
                 key={wf.id}
                 href={wf.href}
-                className={`group relative rounded-2xl card-glass p-8 transition-all duration-300 ${wf.borderHover} ${wf.id === "coming-soon-1" ? "pointer-events-none opacity-60" : "hover:-translate-y-1"}`}
+                className={`group relative rounded-2xl card-glass p-8 transition-all duration-300 animate-fade-up-delay-${Math.min(i + 2, 4)} ${wf.borderHover} ${wf.id === "coming-soon-1" ? "pointer-events-none opacity-60" : "hover:-translate-y-1"}`}
               >
                 {/* Gradient overlay */}
                 <div
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* N8n section */}
-      <section id="about" className="py-20 px-6 border-t border-white/5">
+      <section id="about" className="animate-fade-up-delay-4 py-20 px-6 border-t border-white/5">
         <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl card-glass p-10 sm:p-14 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-cyan-500/5 pointer-events-none" />

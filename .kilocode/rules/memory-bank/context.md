@@ -20,6 +20,10 @@ The site is now a full automation workflows platform for robohal.com, featuring 
   - Home page with hero, stats bar, workflow cards, N8n section, footer
   - `/workflows/real-estate` — Real Estate Lead Engine detail page
   - `/workflows/robot-intel` — Humanoid Robot Intelligence detail page
+- [x] **App improvements**
+  - SEO metadata (Open Graph, Twitter cards)
+  - Entrance animations (fade-up, float)
+  - Accessibility focus states
 
 ## Current Structure
 
@@ -61,3 +65,4 @@ The site is now a full automation workflows platform for robohal.com, featuring 
 |------|---------|
 | Initial | Template created with base setup |
 | 2026-03-02 | Full RoboHal automation workflows app built — home + 2 workflow detail pages |
+| 2026-03-04 | App improvements: SEO metadata, entrance animations, accessibility focus states |
