@@ -44,31 +44,31 @@ const workflows = [
     tagColor: "text-cyan-400",
   },
   {
-    id: "coming-soon-1",
-    href: "#",
-    icon: "⚡",
-    badge: "COMING SOON",
-    badgeColor: "bg-slate-500/20 text-slate-400 border border-slate-500/30",
-    title: "More Workflows",
-    subtitle: "Expanding Automation Suite",
+    id: "business-acquisition",
+    href: "/workflows/business-acquisition",
+    icon: "🏢",
+    badge: "LIVE",
+    badgeColor: "bg-violet-500/20 text-violet-400 border border-violet-500/30",
+    title: "Business Acquisition Engine",
+    subtitle: "Automated Acquisition Intelligence",
     description:
-      "Additional automation workflows are in development. Each will be powered by N8n and designed to surface high-value opportunities across new verticals.",
+      "Continuously monitors business-for-sale listings across multiple platforms to surface acquisition opportunities. Analyzes financials, evaluates financing strategies, and generates ready-to-sign purchase agreements.",
     features: [
-      "Custom workflow requests accepted",
-      "N8n-native integrations",
-      "CRM, Slack, email & webhook outputs",
-      "White-label client delivery",
+      "Multi-platform listing scraping (BizBuySell, LoopNet, etc.)",
+      "Financial data extraction & normalization",
+      "Financing strategy evaluation (bank, owner, earnout)",
+      "Automated LOI & contract generation",
     ],
-    color: "from-slate-500/5 to-slate-600/5",
-    borderHover: "hover:border-slate-500/30",
-    iconBg: "bg-slate-500/10",
-    tagColor: "text-slate-400",
+    color: "from-violet-500/10 to-amber-500/5",
+    borderHover: "hover:border-violet-500/40",
+    iconBg: "bg-violet-500/10",
+    tagColor: "text-violet-400",
   },
 ];
 
 const stats = [
-  { value: "2", label: "Active Workflows" },
-  { value: "N8n", label: "Automation Engine" },
+  { value: "3", label: "Active Workflows" },
+  { value: "HAL", label: "Automation Engine" },
   { value: "24/7", label: "Always Running" },
   { value: "∞", label: "Scalable Leads" },
 ];
@@ -84,7 +84,7 @@ export default function Home() {
               R
             </div>
             <span className="font-semibold text-white tracking-tight">
-              robohal<span className="text-cyan-400">.com</span>
+              Robo <span className="text-cyan-400">HAL</span>
             </span>
           </div>
           <div className="flex items-center gap-6 text-sm text-slate-400">
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center relative">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            Powered by N8n Automation
+            AI-Powered Automation
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
@@ -166,7 +166,7 @@ export default function Home() {
               Available Workflows
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
-              Each workflow is a fully automated pipeline built in N8n — running
+              Each workflow is a fully automated pipeline built on Robo HAL — powered by neural networking with swarm agents — running
               continuously to deliver leads, signals, and intelligence directly
               to your team.
             </p>
@@ -232,41 +232,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* N8n section */}
+      {/* About / Technology section */}
       <section id="about" className="py-20 px-6 border-t border-white/5">
         <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl card-glass p-10 sm:p-14 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-cyan-500/5 pointer-events-none" />
             <div className="relative">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-sm font-medium mb-6">
-                🔧 Built on N8n
+                🧠 Neural Network Architecture
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Enterprise-grade automation,{" "}
-                <span className="gradient-text">without the enterprise price</span>
+                Powered by Swarm Intelligence &{" "}
+                <span className="gradient-text">Neural Networks</span>
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-                Every workflow on RoboHal is built using N8n — the open-source
-                automation platform. This means full transparency, custom
-                integrations, and the ability to connect to any tool your team
-                already uses: CRMs, Slack, email, webhooks, databases, and more.
+                Robo HAL uses a sophisticated AI architecture that combines neural networks with swarm agents. 
+                Multiple autonomous agents work collaboratively in a decentralized system — resilient if one fails, 
+                scalable for any volume, and adaptable to dynamic environments. Each agent can make local decisions 
+                that contribute to emergent, global behaviors for your workflows.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
                 {[
                   {
-                    icon: "🔗",
-                    title: "400+ Integrations",
-                    desc: "Connect to any CRM, database, or communication tool out of the box.",
+                    icon: "🧠",
+                    title: "Neural Controllers",
+                    desc: "Deep learning models enable individual agents to make intelligent local decisions.",
                   },
                   {
-                    icon: "🛡️",
-                    title: "Self-hosted & Secure",
-                    desc: "Your data stays yours. Workflows run on dedicated infrastructure.",
+                    icon: "🐝",
+                    title: "Swarm Resilience",
+                    desc: "If one agent fails, others compensate — ensuring 99.9% uptime reliability.",
                   },
                   {
                     icon: "📈",
-                    title: "Scales with You",
-                    desc: "From 10 leads a day to 10,000 — the same workflow handles it all.",
+                    title: "Adaptive Scaling",
+                    desc: "From 10 leads to 10,000 — swarm agents dynamically distribute workload.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="rounded-xl bg-white/[0.03] border border-white/5 p-5">
@@ -281,6 +281,156 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing section */}
+      <section id="pricing" className="py-20 px-6 border-t border-white/5">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Simple, Flexible Pricing
+            </h2>
+            <p className="text-slate-400 max-w-xl mx-auto">
+              Choose the option that fits your needs. All workflows run 24/7 — you decide how to use them.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Daily Rental",
+                price: "$49",
+                period: "/ day",
+                description: "Perfect for testing or one-time projects",
+                features: [
+                  "Access any workflow for 24 hours",
+                  "Unlimited leads & outputs",
+                  "Email & webhook integrations",
+                  "No commitment",
+                ],
+                popular: false,
+                cta: "Rent Now",
+              },
+              {
+                title: "Monthly Subscription",
+                price: "$199",
+                period: "/ month",
+                description: "Best for ongoing business needs",
+                features: [
+                  "Full access to all workflows",
+                  "Unlimited leads & outputs",
+                  "Priority processing",
+                  "Slack & CRM integrations",
+                  "Cancel anytime",
+                ],
+                popular: true,
+                cta: "Start Trial",
+              },
+              {
+                title: "Annual Plan",
+                price: "$1,499",
+                period: "/ year",
+                description: "Save 37% with annual billing",
+                features: [
+                  "Everything in Monthly",
+                  "Dedicated infrastructure",
+                  "Custom workflow development",
+                  "White-label options",
+                  "Priority support",
+                ],
+                popular: false,
+                cta: "Get Started",
+              },
+            ].map((plan) => (
+              <div
+                key={plan.title}
+                className={`relative rounded-2xl card-glass p-8 ${
+                  plan.popular
+                    ? "border-cyan-500/40 bg-cyan-500/5"
+                    : "hover:border-white/20"
+                } transition-all`}
+              >
+                {plan.popular && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <span className="px-3 py-1 rounded-full bg-cyan-500 text-black text-xs font-semibold">
+                      MOST POPULAR
+                    </span>
+                  </div>
+                )}
+                <div className="text-center mb-6">
+                  <h3 className="text-lg font-semibold text-white mb-2">{plan.title}</h3>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-4xl font-bold text-white">{plan.price}</span>
+                    <span className="text-slate-400">{plan.period}</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mt-2">{plan.description}</p>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
+                      <span className="text-cyan-400">✓</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="mailto:hello@robohal.com"
+                  className={`block w-full py-3 rounded-xl text-center font-semibold transition-all ${
+                    plan.popular
+                      ? "bg-gradient-to-r from-cyan-500 to-cyan-400 text-black hover:from-cyan-400 hover:to-cyan-300"
+                      : "bg-white/10 text-white hover:bg-white/20"
+                  }`}
+                >
+                  {plan.cta}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Custom Workflows section */}
+      <section id="custom" className="py-20 px-6 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl card-glass p-10 sm:p-14 text-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-600/5 to-violet-600/5 pointer-events-none" />
+            <div className="relative">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-6">
+                🛠️ Custom Development
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                Need something custom?
+              </h2>
+              <p className="text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+                Every business is different. We build custom automation workflows tailored to your 
+                specific needs — whether it is a new vertical, unique data sources, or specialized 
+                outputs. Tell us what you need, and we will build it.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left mb-8">
+                {[
+                  "New industry verticals",
+                  "Custom data sources",
+                  "Specialized outputs & reports",
+                  "CRM & tool integrations",
+                  "White-label solutions",
+                  "On-premise deployments",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2 text-slate-300">
+                    <span className="text-amber-400">▸</span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <a
+                href="mailto:hello@robohal.com?subject=Custom%20Workflow%20Request"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-black font-semibold hover:from-amber-400 hover:to-amber-300 transition-all"
+              >
+                Describe Your Needs
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-white/5 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
@@ -288,7 +438,7 @@ export default function Home() {
             <div className="w-6 h-6 rounded bg-gradient-to-br from-cyan-400 to-violet-600 flex items-center justify-center text-xs font-bold text-white">
               R
             </div>
-            <span>robohal.com — Automation Workflows</span>
+            <span>Robo <span className="text-cyan-400">HAL</span> — Automation Workflows</span>
           </div>
           <div className="flex items-center gap-6">
             <a href="mailto:hello@robohal.com" className="hover:text-white transition-colors">

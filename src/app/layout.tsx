@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "RoboHal — Automation Workflows",
   description:
-    "Intelligent automation workflows for real estate lead generation, humanoid robot intelligence, and more — powered by N8n.",
+    "Intelligent automation workflows for real estate lead generation, humanoid robot intelligence, and more — powered by Robo HAL neural networking.",
 };
 
 export default function RootLayout({
@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}

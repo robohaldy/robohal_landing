@@ -5,7 +5,7 @@ const algorithmSteps = [
     step: "01",
     title: "Listing Ingestion",
     description:
-      "Continuously pulls new and updated listings from MLS feeds, Zillow, Realtor.com, and off-market sources via N8n HTTP nodes and webhooks.",
+      "Continuously pulls new and updated listings from MLS feeds, Zillow, Realtor.com, and off-market sources via Robo HAL HTTP nodes and webhooks.",
     icon: "📡",
     color: "text-emerald-400",
     borderColor: "border-emerald-500/20",
@@ -94,7 +94,7 @@ export default function RealEstatePage() {
               R
             </div>
             <span className="font-semibold text-white tracking-tight">
-              robohal<span className="text-cyan-400">.com</span>
+              Robo <span className="text-cyan-400">HAL</span>
             </span>
           </Link>
           <Link
@@ -115,7 +115,7 @@ export default function RealEstatePage() {
             <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
               LIVE WORKFLOW
             </span>
-            <span className="text-xs text-slate-500">Powered by N8n</span>
+            <span className="text-xs text-slate-500">Powered by Robo HAL</span>
           </div>
 
           <div className="flex items-start gap-5 mb-6">
@@ -288,9 +288,12 @@ export default function RealEstatePage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Ready to activate this workflow?
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-400 mb-4">
             Get in touch to configure the workflow for your market, connect your
             data sources, and start receiving qualified leads.
+          </p>
+          <p className="text-sm text-cyan-400 mb-8">
+            Starting at $199/month or $49/day rental available
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

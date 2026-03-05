@@ -40,7 +40,7 @@ const pipelineSteps = [
     step: "01",
     title: "Multi-Source Scraping",
     description:
-      "N8n HTTP Request nodes and RSS feed parsers continuously pull content from 50+ sources across tech media, academic repositories, company newsrooms, and social platforms.",
+      "Robo HAL HTTP Request nodes and RSS feed parsers continuously pull content from 50+ sources across tech media, academic repositories, company newsrooms, and social platforms.",
     icon: "🕷️",
     color: "text-cyan-400",
   },
@@ -139,7 +139,7 @@ export default function RobotIntelPage() {
               R
             </div>
             <span className="font-semibold text-white tracking-tight">
-              robohal<span className="text-cyan-400">.com</span>
+              Robo <span className="text-cyan-400">HAL</span>
             </span>
           </Link>
           <Link
@@ -161,7 +161,7 @@ export default function RobotIntelPage() {
             <span className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
               LIVE WORKFLOW
             </span>
-            <span className="text-xs text-slate-500">Powered by N8n</span>
+            <span className="text-xs text-slate-500">Powered by Robo HAL</span>
           </div>
 
           <div className="flex items-start gap-5 mb-6">
@@ -362,9 +362,12 @@ export default function RobotIntelPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Stay ahead of the humanoid robotics wave
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-400 mb-4">
             Get in touch to activate this workflow and start building your
             proprietary intelligence advantage in the humanoid robotics space.
+          </p>
+          <p className="text-sm text-cyan-400 mb-8">
+            Starting at $199/month or $49/day rental available
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
