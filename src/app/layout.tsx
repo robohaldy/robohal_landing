@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RoboHal — Automation Workflows",
+  title: "RoboHal — Custom Automation Solutions",
   description:
-    "Intelligent automation workflows for real estate lead generation, humanoid robot intelligence, and more — powered by Robo HAL neural networking.",
+    "We work with companies to bring humanoid automation to the streets. We build custom automation workflows for all businesses at affordable rates.",
 };
 
 export default function RootLayout({
